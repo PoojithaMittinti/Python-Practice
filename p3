@@ -1,0 +1,22 @@
+
+Today I learnt more briefly about Git Cherry Pick and Merge conflicts.
+And also explain very briefly with a practical example.
+
+
+Git 
+
+CherryPick: When we have multiple feature files in a feature branch; but I only need to merge a specfic file to the main branch,
+I use that specific files commit id merged into the main branch instead of merging all the files from the feature branch.
+Advantages : if we want to control the collaborate safely across branches without creating unnecessary conflicts.
+To fix bugs quickly in production without merging unfinished features
+Syntax: git cherry-pick <branchname>
+
+
+Merge: The standard way of combining/merging all the files from one branch to the master branch.
+Use case:
+Often used in feature-to-main integration,
+team collaboration,
+and release preparation.
+
+While merging from one brnch to main branch Conflicts may occur if the same lines are modified which is called merge conflict
+A merge conflict happens when Git cannot automatically combine changes from two branches because the same lines were modified. I open the file, look at the conflict markers, decide which changes to keep or combine, remove the markers, and then commit the resolved file.
